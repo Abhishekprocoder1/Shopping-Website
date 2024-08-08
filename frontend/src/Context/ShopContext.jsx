@@ -15,7 +15,7 @@ const ShopContextProvider = (props) => {
   const [all_product, setAll_product] = useState([]);
   const [cartItem, setCartItem] = useState(getDefaltCart());
   const [token, setToken] = useState(localStorage.getItem('auth-token') || '');
-  const url = "http://localhost:4000";
+  const url = "https://shopping-website-backend-xb6k.onrender.com";
 
   useEffect(() => {
     fetch(`${url}/allproducts`)
