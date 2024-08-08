@@ -1,0 +1,50 @@
+.shopslide {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    width: 50%;
+    height: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.slide-panel {
+    display: flex;
+    align-items: center;
+    width: 25em;
+    height: 25em;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+.prev, .next {
+    width: 2em;
+    height: 2em;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: 0.25s;
+}
+.prev:hover, .next:hover {
+    transform: scale(1.25);
+}
+.prev {
+    background-image: url('../Assets/next.png'); /* Ensure you have the correct image path */
+}
+.next {
+    background-image: url('../Assets/next.png'); /* Ensure you have the correct image path */
+}
+.slide-panel img1{
+    scroll-snap-align: start;
+    min-width: 100%;
+    border-radius: 0.2em;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
