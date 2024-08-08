@@ -1,4 +1,4 @@
-const port = 4000;
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -10,7 +10,7 @@ const { type } = require("os");
 require('dotenv').config();
 const Stripe=require("stripe")
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-
+const port = process.env.PORT || 4000;
 
  app.use(express.json());
 

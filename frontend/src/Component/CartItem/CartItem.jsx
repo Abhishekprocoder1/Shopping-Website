@@ -3,8 +3,6 @@ import "./CartItem.css";
 import remove_icon from "../Assets/cart_cross_icon.png";
 import { ShopContext } from "../../Context/ShopContext";
 import { useNavigate } from "react-router-dom";
-import { loadStripe } from '@stripe/stripe-js';
-// import carts from '../Assets/all_product';
 
 const CartItem = () => {
   const { getTotalCartAmount, all_product, cartItem, removeaddToCart } = useContext(ShopContext);

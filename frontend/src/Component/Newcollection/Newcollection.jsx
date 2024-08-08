@@ -2,7 +2,6 @@ import React, { useContext, useEffect, useState } from 'react';
 import Item from '../Item/item'
 import './Newcollection.css';
 import { ShopContext } from '../../Context/ShopContext';
-import new_collection from '../Assets/new_collections';
 const Newcollection = () => {
   const { url } = useContext(ShopContext)
 

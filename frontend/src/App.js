@@ -1,12 +1,11 @@
 
 import './App.css';
 import Navbar from './Component/Navbar/Navbar';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import ShopItem from './Pages/ShopCategory';
 import Shop from './Pages/Shop'
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
-import Login_Singup from './Pages/Login_Singup';
 import Footer from './Component/Footer/Footer';
 import men_banner from './Component/Assets/banner_mens.png';
 import woman_banner from './Component/Assets/banner_women.png';
@@ -17,6 +16,7 @@ import success from './Pages/success';
 import LatestCollectionspage from './Pages/LatestCollectionspage';
 import Exclusiveoffer from './Pages/Exclusiveoffer';
 import OrderProduct from './Pages/OrderProduct/OrderProduct';
+import Loginregister from './Component/Loginregster/Loginregister';
 
 
 function App() {
@@ -46,7 +46,7 @@ function App() {
             <Route path='/Product' element={<Product />}>
               <Route path=":ProductId" element={<Product />} />
             </Route>
-            <Route path='/login' element={<Login_Singup />} />
+             <Route path='/login' element={<Loginregister />} /> 
             <Route path='/cart' element={<Cart />} />
           </Routes>
           <Footer />

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect ,useState} from 'react'
 import img from '../../src/Component/Assets/sliderimg/lts.jpg'
 import Item from '../Component/Item/item';
-import './CSS/Latestcollection.css'
+import './CSS/luck.css'
 import { ShopContext } from '../Context/ShopContext';
 const LatestCollectionspage = () => {
 

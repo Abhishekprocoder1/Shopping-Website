@@ -12,7 +12,7 @@ const images=[img1,img2,img3]
                      <div className='slide-panel'></div>
                      {images.map(image=>{
                         return (
-                            <img src={image} className='img1' />
+                            <img src={image} className='img1' alt='' />
                         )
                      })}
                      <div className='next'></div>

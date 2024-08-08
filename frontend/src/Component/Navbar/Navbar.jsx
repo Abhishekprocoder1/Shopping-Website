@@ -3,7 +3,6 @@ import "./Navbar.css";
 import dropdown from '../Assets/dpimg.png'
 import { useState } from 'react';
 import logo from "../Assets/logo.png";
-import search_iconssss from "../Assets/search.png"
 import cart_icone from '../Assets/cart_icon.png'
 import { Link } from 'react-router-dom';
 import { ShopContext } from '../../Context/ShopContext';
