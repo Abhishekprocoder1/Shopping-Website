@@ -218,7 +218,7 @@ app.post('/login', async (req, res) => {
 
 })
 
-
+// creating end ponit for cart
 
 app.post('/addproduct', async (req, res) => {
     let products = await Product.find({})
