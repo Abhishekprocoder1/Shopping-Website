@@ -1,4 +1,3 @@
-
 import './App.css';
 import Navbar from './Component/Navbar/Navbar';
 import { Routes, Route } from 'react-router-dom';
@@ -12,20 +11,18 @@ import woman_banner from './Component/Assets/banner_women.png';
 import kid_banner from './Component/Assets/banner_kids.png';
 import mencat from './Subcagory/subcateman'
 import Cancle from './Pages/Cancle';
-import success from './Pages/success';
 import LatestCollectionspage from './Pages/LatestCollectionspage';
 import Exclusiveoffer from './Pages/Exclusiveoffer';
 import OrderProduct from './Pages/OrderProduct/OrderProduct';
 import Loginregister from './Component/Loginregster/Loginregister';
+import Success from './Component/Success/Success';
 
 
 function App() {
   return (
     <>
      <Navbar />
-      <div className='app'>
-      
-         
+      <div className='app'>   
           <Routes>
             <Route path="/order" element={<OrderProduct />} />
           </Routes>
@@ -34,7 +31,7 @@ function App() {
           </Routes>
           <Routes >
             <Route path='/latestcollection' element={<LatestCollectionspage />} />
-            <Route path='/success' element={success} />
+            <Route path='/success' element={<Success/>} />
             <Route path='/cancle' element={Cancle} />
           </Routes>
           <Routes>

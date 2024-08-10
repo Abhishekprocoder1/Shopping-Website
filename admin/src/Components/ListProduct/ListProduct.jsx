@@ -17,10 +17,7 @@ const ListProduct = () => {
 const remove_product=async(id)=>{
 
     await fetch('https://shopping-website-backend-xb6k.onrender.com/removeproduct',{
-<<<<<<< HEAD
  
-=======
->>>>>>> bb78435005a6866a6f73e65d039f2af8fe07388e
         method:'POST',
         headers:{
             Accept: 'application/json',

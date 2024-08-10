@@ -42,8 +42,10 @@ app.post('/payment', async (req, res) => {
                 quantity: 1,
             }],
             mode: 'payment',
-            success_url: 'https://shopping-website-frontend.onrender.com/success',
-            cancel_url: 'https://shopping-website-frontend.onrender.com/cancel',
+            success_url: 'https://shopping-website-backend-xb6k.onrender.com/success',
+            cancel_url: 'https://shopping-website-backend-xb6k.onrender.com/cancel',
+            
+            
         });
 
         res.json({ url: session.url });
