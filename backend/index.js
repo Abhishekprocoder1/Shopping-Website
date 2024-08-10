@@ -42,8 +42,8 @@ app.post('/payment', async (req, res) => {
                 quantity: 1,
             }],
             mode: 'payment',
-            success_url: 'http://localhost:3000/success',
-            cancel_url: 'http://localhost:3000/cancel',
+            success_url: 'https://shopping-website-frontend.onrender.com/success',
+            cancel_url: 'https://shopping-website-frontend.onrender.com/cancel',
         });
 
         res.json({ url: session.url });
@@ -216,7 +216,7 @@ app.post('/login', async (req, res) => {
 
 })
 
-
+// creating end ponit for cart
 
 app.post('/addproduct', async (req, res) => {
     let products = await Product.find({})
