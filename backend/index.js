@@ -93,9 +93,7 @@ app.post("/upload", upload.single('product'), (req, res) => {
 
 
 
-
 //schema for product creating
-
 
 const Product = mongoose.model("Product", {
     id: {
